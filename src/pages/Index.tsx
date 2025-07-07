@@ -263,7 +263,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">AI Rep Briefings</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Execution Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Territory Optimization</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Call Optimization</a></li>
               </ul>
             </div>
             <div>
