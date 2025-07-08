@@ -242,52 +242,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">InField AI</span>
-              </div>
-              <p className="text-gray-400 text-sm">
-                Transforming pharmaceutical field force execution with intelligent, data-driven insights.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-300 mb-4">Solutions</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">AI Rep Briefings</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Execution Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Call Optimization</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-300 mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-300 mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 InField AI. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
