@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
+  const handleRequestAccess = () => {
+    window.open('mailto:contact@infieldai.com?subject=Request Early Access&body=Hi, I would like to request early access to InField AI. Please contact me to discuss further.', '_blank');
+  };
+
+  const handleBookPilot = () => {
+    window.open('mailto:contact@infieldai.com?subject=Book a Pilot&body=Hi, I would like to book a pilot for InField AI. Please contact me to schedule a demo and discuss implementation.', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
@@ -20,7 +28,7 @@ const Index = () => {
             <a href="#solutions" className="text-gray-600 hover:text-blue-600 transition-colors">Solutions</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
           </nav>
-          <Button className="bg-blue-600 hover:bg-blue-700">
+          <Button className="bg-blue-600 hover:bg-blue-700" onClick={handleRequestAccess}>
             Request Early Access
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
@@ -45,11 +53,11 @@ const Index = () => {
             Empower your reps with real-time signals and optimize territory execution based on enterprise data and in-field activity.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" onClick={handleBookPilot}>
               Book a Pilot
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-200 hover:bg-blue-50">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-200 hover:bg-blue-50" onClick={handleRequestAccess}>
               Request Early Access
             </Button>
           </div>
@@ -229,11 +237,11 @@ const Index = () => {
             Join leading pharmaceutical companies in piloting the future of intelligent field force execution
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4" onClick={handleBookPilot}>
               Book a Pilot
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4" onClick={handleRequestAccess}>
               Request Early Access
             </Button>
           </div>
