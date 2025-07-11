@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
   const handleRequestAccess = () => {
-    window.open('mailto:contact@infieldai.com?subject=Request Early Access&body=Hi, I would like to request early access to InField AI. Please contact me to discuss further.', '_blank');
+    window.open('mailto:contact@paramanu.com?subject=Request Early Access&body=Hi, I would like to request early access to Paramanu. Please contact me to discuss further.', '_blank');
   };
 
   const handleBookPilot = () => {
-    window.open('mailto:contact@infieldai.com?subject=Book a Pilot&body=Hi, I would like to book a pilot for InField AI. Please contact me to schedule a demo and discuss implementation.', '_blank');
+    window.open('mailto:contact@paramanu.com?subject=Book a Pilot&body=Hi, I would like to book a pilot for Paramanu. Please contact me to schedule a demo and discuss implementation.', '_blank');
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -24,11 +24,13 @@ const Index = () => {
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">InField AI</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/e2b7c76d-5ce6-4051-a8a6-3bdaa737447d.png" 
+              alt="Paramanu Logo" 
+              className="w-8 h-8"
+            />
+            <span className="text-xl font-bold text-gray-900">Paramanu</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('features')} className="text-gray-600 hover:text-blue-600 transition-colors">Features</button>
@@ -56,7 +58,7 @@ const Index = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            InField AI transforms static field force plans into dynamic, intelligent execution for pharmaceutical companies. 
+            Paramanu transforms static field force plans into dynamic, intelligent execution for pharmaceutical companies. 
             Empower your reps with real-time signals and optimize territory execution based on enterprise data and in-field activity.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
