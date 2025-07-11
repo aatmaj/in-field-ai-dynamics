@@ -12,6 +12,13 @@ const Index = () => {
     window.open('mailto:contact@infieldai.com?subject=Book a Pilot&body=Hi, I would like to book a pilot for InField AI. Please contact me to schedule a demo and discuss implementation.', '_blank');
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
@@ -24,9 +31,9 @@ const Index = () => {
             <span className="text-xl font-bold text-gray-900">InField AI</span>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-            <a href="#solutions" className="text-gray-600 hover:text-blue-600 transition-colors">Solutions</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            <button onClick={() => scrollToSection('features')} className="text-gray-600 hover:text-blue-600 transition-colors">Features</button>
+            <button onClick={() => scrollToSection('solutions')} className="text-gray-600 hover:text-blue-600 transition-colors">Solutions</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-blue-600 transition-colors">Contact</button>
           </nav>
           <Button className="bg-blue-600 hover:bg-blue-700" onClick={handleRequestAccess}>
             Request Early Access
