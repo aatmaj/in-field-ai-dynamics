@@ -30,7 +30,7 @@ const Index = () => {
               alt="Paramanu Logo" 
               className="w-8 h-8"
             />
-            <span className="text-xl font-bold text-gray-900">Paramanu</span>
+            <span className="text-xl font-bold text-blue-900">Paramanu</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('features')} className="text-gray-600 hover:text-blue-600 transition-colors">Features</button>
@@ -158,8 +158,8 @@ const Index = () => {
             
             <Card className="border-blue-100 hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                  <TrendingUp className="w-6 h-6 text-green-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                  <TrendingUp className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Execution Analytics</h3>
                 <p className="text-gray-600 mb-4">
@@ -175,8 +175,8 @@ const Index = () => {
             
             <Card className="border-blue-100 hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                  <Target className="w-6 h-6 text-purple-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                  <Target className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Signal-Based Optimization</h3>
                 <p className="text-gray-600 mb-4">
@@ -215,8 +215,8 @@ const Index = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">SFE Leaders</h3>
               <p className="text-gray-600">
@@ -224,8 +224,8 @@ const Index = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-8 h-8 text-purple-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">CIOs & Digital Heads</h3>
               <p className="text-gray-600">
