@@ -26,7 +26,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/logo-icon-only.svg" 
+              src="/lovable-uploads/156d695a-4ad7-4a18-8d00-b84d76015e46.png" 
               alt="Paramanu Logo" 
               className="w-8 h-8"
             />
