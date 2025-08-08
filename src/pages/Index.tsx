@@ -23,7 +23,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/156d695a-4ad7-4a18-8d00-b84d76015e46.png" 
@@ -187,6 +187,211 @@ const Index = () => {
                   <li>• Digital engagement signals</li>
                   <li>• Field feedback integration</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Workflow Architecture */}
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Complete Pharma Field Intelligence Architecture
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              End-to-end workflow connecting field activities with enterprise intelligence
+            </p>
+          </div>
+          
+          {/* Top Level - Analytics, Workflows, Integrations */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">ANALYTICS</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <span>Territory performance tracking</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <span>HCP engagement analytics</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <span>ROI measurement</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">WORKFLOWS</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <span>Rep scheduling</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <span>Follow up automation</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-sm text-gray-600">
+                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <span>Activity tracking</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">INTEGRATIONS</h3>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="text-xs bg-gray-100 rounded px-2 py-1 text-center">Veeva</div>
+                  <div className="text-xs bg-gray-100 rounded px-2 py-1 text-center">OCE</div>
+                  <div className="text-xs bg-gray-100 rounded px-2 py-1 text-center">IQVIA</div>
+                  <div className="text-xs bg-gray-100 rounded px-2 py-1 text-center">Salesforce</div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Central Workflow */}
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-200 mb-16">
+            <div className="grid md:grid-cols-5 gap-6 items-center">
+              {/* Rep Visits HCP */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Users className="w-8 h-8 text-blue-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Rep visits HCP</h4>
+                <p className="text-xs text-gray-600 mt-1">Field interaction</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex justify-center">
+                <ArrowRight className="w-6 h-6 text-gray-400" />
+              </div>
+
+              {/* Records Interaction */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle className="w-8 h-8 text-green-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Records interaction</h4>
+                <p className="text-xs text-gray-600 mt-1">Data capture</p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex justify-center">
+                <ArrowRight className="w-6 h-6 text-gray-400" />
+              </div>
+
+              {/* Delivers/Detailing */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Target className="w-8 h-8 text-purple-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Delivers detailing</h4>
+                <p className="text-xs text-gray-600 mt-1">Content delivery</p>
+              </div>
+            </div>
+
+            {/* Second Row */}
+            <div className="grid md:grid-cols-3 gap-6 items-center mt-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-8 h-8 text-orange-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Transports samples</h4>
+                <p className="text-xs text-gray-600 mt-1">Sample management</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Zap className="w-8 h-8 text-indigo-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Produces sales</h4>
+                <p className="text-xs text-gray-600 mt-1">Revenue generation</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="w-8 h-8 text-teal-600" />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">Compliance tracking</h4>
+                <p className="text-xs text-gray-600 mt-1">Regulatory adherence</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Level - Data and Models */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">DATA</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">CRM records</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Rx data</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Call activity logs</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Market research</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">MODELS (ONTOLOGY)</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Next best action</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">HCP segmentation</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Sales prediction</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Churn prediction</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
