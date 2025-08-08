@@ -28,7 +28,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/156d695a-4ad7-4a18-8d00-b84d76015e46.png" 
               alt="Paramanu Logo" 
-              className="w-8 h-8"
+              className="w-24 h-24"
             />
             <span className="text-xl font-bold text-blue-900">Paramanu</span>
           </div>
