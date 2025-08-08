@@ -23,7 +23,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-1 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/156d695a-4ad7-4a18-8d00-b84d76015e46.png" 
@@ -260,6 +260,41 @@ const Index = () => {
             </Card>
           </div>
 
+          {/* Middle Level - Ontology */}
+          <div className="mb-16">
+            <Card className="border-blue-200 bg-white/60 backdrop-blur-sm max-w-2xl mx-auto">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">ONTOLOGY</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Next best action</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">HCP segmentation</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Sales prediction</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <div className="w-6 h-6 bg-gray-400 rounded"></div>
+                    </div>
+                    <p className="text-xs text-gray-600">Churn prediction</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           {/* Central Workflow */}
           <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-200 mb-16">
             <div className="grid md:grid-cols-5 gap-6 items-center">
@@ -365,31 +400,31 @@ const Index = () => {
             
             <Card className="border-blue-200 bg-white/60 backdrop-blur-sm">
               <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">MODELS (ONTOLOGY)</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">MODELS</h3>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="text-center">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                       <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
                     </div>
-                    <p className="text-xs text-gray-600">Next best action</p>
+                    <p className="text-xs text-gray-600">Predictive analytics</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                       <div className="w-6 h-6 bg-gray-400 rounded"></div>
                     </div>
-                    <p className="text-xs text-gray-600">HCP segmentation</p>
+                    <p className="text-xs text-gray-600">Territory optimization</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                       <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
                     </div>
-                    <p className="text-xs text-gray-600">Sales prediction</p>
+                    <p className="text-xs text-gray-600">Rep effectiveness</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                       <div className="w-6 h-6 bg-gray-400 rounded"></div>
                     </div>
-                    <p className="text-xs text-gray-600">Churn prediction</p>
+                    <p className="text-xs text-gray-600">Market intelligence</p>
                   </div>
                 </div>
               </CardContent>
